@@ -1,0 +1,83 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+  flex: 1;
+}
+
+.rose-content {
+  width: 100%;
+}
+
+/* Oculta el h1 del MD — duplicado con el h1 del HTML */
+.rose-content h1 {
+  display: none;
+}
+
+/* Títulos de sección */
+.rose-content h2 {
+  color: var(--color-studio-primary);
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 0.5rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.rose-content h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Títulos de subsección */
+.rose-content h3 {
+  color: var(--color-studio-primary);
+  font-size: 1rem;
+  margin: 1.5rem 0 0.3rem;
+}
+
+/* Cuerpo de texto */
+.rose-content p {
+  color: var(--color-text);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+/* Listas */
+.rose-content ul {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.rose-content li {
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 0.3rem;
+}
+
+/* Labels en negrita */
+.rose-content strong {
+  color: var(--color-studio-primary);
+}
+
+/* Pull quotes — párrafos que contienen cursiva (solos o con texto previo) */
+.rose-content p:has(em) {
+  border-left: 3px solid var(--color-studio-primary);
+  padding: 0.3rem 0 0.3rem 1rem;
+  color: var(--color-text-muted);
+  margin: 1.2rem 0;
+}
+
+/* Separadores de sección */
+.rose-content hr {
+  border: none;
+  border-top: 1px solid var(--card-border);
+  margin: 2rem 0;
+}
+
+/* Estado de carga */
+.loading {
+  color: var(--color-text-muted);
+  font-style: italic;
+}

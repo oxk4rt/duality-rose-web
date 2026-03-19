@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Estudio | Duality ROSE</title>
+  <meta name="description" content="Conoce Duality ROSE, el estudio independiente de videojuegos narrativos. Habla con nuestra IA y descubre quiénes somos." />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/studio.css">
+</head>
+<body>
+    <!-- 
+      Duality ROSE · En busca de la lógica del arte. 
+      Gracias por mirar nuestro código. 
+    -->
+  <header>
+    <div id="header-curve" class="header-curve-left">
+      <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+        <path d="M100,4 Q30,0 0,20 L0,0 L100,0 Z" />
+      </svg>
+    </div>
+
+    <a href="../index.html">
+      <img src="../assets/images/rosa_derecha.png" alt="Inicio" class="back-left" />
+    </a>
+  </header>
+
+  <main>
+    <h1>El estudio Duality ROSE</h1>
+    <div class="game-container">
+      <canvas id="gameCanvas"></canvas>
+        <button id="reload-btn" title="Reiniciar simulación">
+            <i class="fa-solid fa-rotate-right"></i>
+        </button>
+    </div>
+
+    <div class="intro-text">
+      Creamos historias interactivas donde narrativa y jugabilidad se entrelazan. Nuestro estudio está formado por personas apasionadas por contar, diseñar y compartir.
+    </div>
+
+    <a href="team.html" class="team-link">
+        Conoce a nuestro equipo
+    </a>
+
+    <div class="chat-container">
+        <div class="chat-response" id="chat-response">Hola, soy Rose. ¿Qué quieres saber del estudio?</div>
+        <div class="chat-input">
+            <textarea id="user-question" placeholder="Escribe tu pregunta"></textarea>
+            <button id="send-btn" aria-label="Enviar pregunta">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+        <div class="chat-powered-by">Powered by IA</div>
+    </div>
+
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://x.com" target="_blank" aria-label="X / Twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://kickstarter.com" target="_blank" aria-label="Kickstarter">
+        <i class="fa-brands fa-kickstarter-k"></i>
+      </a>
+    </div>
+
+    <a href="contact.html" class="contact-link">
+        Contacta con nosotros
+    </a>
+  </main>
+
+  <footer>
+    <div class="quote">"Arte, código y orden: los ingredientes de nuestras recetas."</div>
+    <div class="copyright">&copy; <span id="copyright-year"></span> Duality ROSE.</div>
+    <div class="footer-bar"></div>
+  </footer>
+
+  <script src="../assets/js/experiments/game-of-life.js"></script>
+  <script src="../assets/js/core/chat-with-rose.js"></script>
+  <script src="../assets/js/core/copyright.js"></script>
+  <script>
+    document.getElementById('reload-btn').addEventListener('click', reloadSimulation);
+  </script>
+  <!-- 
+    Duality ROSE · La búsqueda de la lógica del arte continuará. 
+    Esto es todo por ahora. 
+  -->
+</body>
+</html>

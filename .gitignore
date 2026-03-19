@@ -1,0 +1,29 @@
+# Configuración privada con claves de API
+api/config.php
+
+# Archivos de debug generados en tiempo de ejecución
+api/debug_openrouter_response.json
+api/debug_openrouter_error.log
+*.log
+
+# Dependencias de terceros (PHPMailer — reinstalar con download o Composer)
+api/lib/
+
+# Dependencias y entornos locales
+node_modules/
+vendor/
+.env
+
+# Documentos internos de desarrollo
+CONTEXT.md
+
+# Editor
+duality-rose.code-workspace
+
+# Fotos personales del equipo (no se publican en repositorio público)
+assets/images/OEG.png
+assets/images/RSS.png
+
+# Sistema operativo
+Thumbs.db
+desktop.ini

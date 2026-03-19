@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Duality ROSE</title>
+  <meta name="description" content="Contacta con el equipo de Duality ROSE. Envíanos tu mensaje y nos pondremos en contacto contigo." />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/tokens.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/components.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+    <!-- 
+      Duality ROSE · En busca de la lógica del arte. 
+      Gracias por mirar nuestro código. 
+    -->
+  <header>
+    <div id="header-curve" class="header-curve-left">
+      <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+        <path d="M100,4 Q30,0 0,20 L0,0 L100,0 Z" />
+      </svg>
+    </div>
+
+    <a href="studio.html">
+      <img src="../assets/images/rosa_derecha.png" alt="Estudio" class="back-left" />
+    </a>
+  </header>
+
+  <main>
+    <h1>Conecta con Duality ROSE</h1>
+    <div class="contact-card">
+      <form id="contact-form">
+        <div>
+          <label for="name">Nombre *</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+          <div id="email-error" class="error-message" style="display: none;">Introduce un email válido.</div>
+        </div>
+
+        <div>
+          <label for="message">Mensaje *</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <div id="captcha-container">
+            <div id="minigame-wrapper">
+                <div id="drag-area">
+                    <div class="drop-zone" data-symbol="♠️">♠️</div>
+                    <div class="drop-zone" data-symbol="♥️">♥️</div>
+                    <div class="drop-zone" data-symbol="♦️">♦️</div>
+                    <div class="drop-zone" data-symbol="♣️">♣️</div>
+                </div>
+
+                <div id="drag-items">
+                    <div class="draggable" draggable="true" data-symbol="♠️">♠️</div>
+                    <div class="draggable" draggable="true" data-symbol="♥️">♥️</div>
+                    <div class="draggable" draggable="true" data-symbol="♦️">♦️</div>
+                    <div class="draggable" draggable="true" data-symbol="♣️">♣️</div>
+                </div>
+
+                <div id="minigame-message">Resolver el minijuego para activar el envío...</div>
+            </div>
+        </div>
+
+        <div id="form-feedback" class="form-feedback"></div>
+        <button type="submit" id="submit-btn" disabled>Conectar</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="quote">"Cada decisión transforma, pero la esencia permanece."</div>
+    <div class="copyright">&copy; <span id="copyright-year"></span> Duality ROSE.</div>
+    <div class="footer-bar"></div>
+  </footer>
+
+  <div id="success-modal" class="modal-overlay" aria-hidden="true">
+    <div class="modal-card">
+      <p class="modal-message">Mensaje recibido.<br>Pronto abriremos ese capítulo contigo.</p>
+      <button id="modal-close" class="modal-close">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="../assets/js/experiments/captcha-game.js"></script>
+  <script src="../assets/js/core/contact.js"></script>
+  <!-- 
+    Duality ROSE · La búsqueda de la lógica del arte continuará.
+    Esto es todo por ahora.
+  -->
+  <script src="../assets/js/core/copyright.js"></script>
+</body>
+</html>

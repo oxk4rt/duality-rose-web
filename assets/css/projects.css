@@ -1,0 +1,92 @@
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(560px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+main > h1 {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+}
+
+main::after {
+  content: '';
+  display: block;
+  height: 7vh;
+}
+
+.project-card {
+  padding: 0;
+  margin: 1rem auto;
+  max-width: 800px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-card);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.project-content {
+  padding: 1rem 1.5rem;
+}
+
+.project-content h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-catalog-primary);
+}
+
+.project-content p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: var(--color-catalog-primary);
+  border-bottom: 1px solid var(--color-catalog-primary);
+  transition: all 0.3s ease;
+}
+
+.read-more:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.badge-dev      { background-color: #a94442; }
+.badge-ready    { background-color: #4CAF50; }
+.badge-demo     { background-color: #3F51B5; }
+.badge-alpha    { background-color: #FF9800; }
+.badge-beta     { background-color: #9C27B0; }

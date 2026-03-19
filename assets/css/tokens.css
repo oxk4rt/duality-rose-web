@@ -1,0 +1,27 @@
+:root {
+  /* Globales */
+  --color-bg: #f4f4f4;
+  --color-text: #1a1a1a;
+  --color-text-muted: #464646;
+  --color-footer: #242424;
+  --font-mono: 'Fira Code', monospace;
+
+  /* Estudio (lado izquierdo) */
+  --color-studio-primary: #41760f;
+  --color-studio-dark: #2d5209;
+  --color-studio-hover: #60a30f80;
+
+  /* Catálogo (lado derecho) */
+  --color-catalog-primary: #5b0688;
+  --color-catalog-hover: #9c07ec80;
+
+  /* Tarjetas */
+  --card-bg: #f7f7f7;
+  --card-border: #cccccc;
+  --radius-card: 6px;
+  --shadow-card: 0 0 5px #0000001a;
+  --shadow-soft: 2px 2px 8px #0000000d;
+
+  /* Feedback */
+  --color-error: #c62828;
+}

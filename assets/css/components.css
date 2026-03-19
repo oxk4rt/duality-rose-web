@@ -1,0 +1,31 @@
+.header-curve-left path {
+  fill: var(--color-studio-primary);
+}
+
+.header-curve-right path {
+  fill: var(--color-catalog-primary);
+}
+
+.back-left {
+  position: fixed;
+  top: 0.5vh;
+  left: 0.12vw;
+  height: 5vh;
+  z-index: 20;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.back-right {
+  position: fixed;
+  top: 0.5vh;
+  right: 0.12vw;
+  height: 5vh;
+  z-index: 20;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.back-left:hover, .back-right:hover {
+  filter: drop-shadow(0 0 2px white);
+}
